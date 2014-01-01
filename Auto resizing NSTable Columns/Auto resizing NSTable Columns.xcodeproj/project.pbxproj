@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F3F13901187462AE00E70FE7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F13900187462AE00E70FE7 /* Cocoa.framework */; };
+		F3F1390B187462AE00E70FE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3F13909187462AE00E70FE7 /* InfoPlist.strings */; };
+		F3F1390D187462AE00E70FE7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F1390C187462AE00E70FE7 /* main.m */; };
+		F3F13911187462AE00E70FE7 /* Credits.rtf in Resources */ = {isa = PBXBuildFile; fileRef = F3F1390F187462AE00E70FE7 /* Credits.rtf */; };
+		F3F13914187462AE00E70FE7 /* KLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F13913187462AE00E70FE7 /* KLAppDelegate.m */; };
+		F3F13917187462AE00E70FE7 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = F3F13915187462AE00E70FE7 /* MainMenu.xib */; };
+		F3F13919187462AE00E70FE7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3F13918187462AE00E70FE7 /* Images.xcassets */; };
+		F3F13920187462AE00E70FE7 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F1391F187462AE00E70FE7 /* XCTest.framework */; };
+		F3F13921187462AE00E70FE7 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3F13900187462AE00E70FE7 /* Cocoa.framework */; };
+		F3F13929187462AE00E70FE7 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3F13927187462AE00E70FE7 /* InfoPlist.strings */; };
+		F3F1392B187462AE00E70FE7 /* Auto_resizing_NSTable_ColumnsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F1392A187462AE00E70FE7 /* Auto_resizing_NSTable_ColumnsTests.m */; };
+		F3F139361874652D00E70FE7 /* KLTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = F3F139351874652D00E70FE7 /* KLTableView.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3F13922187462AE00E70FE7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3F138F5187462AE00E70FE7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3F138FC187462AE00E70FE7;
+			remoteInfo = "Auto resizing NSTable Columns";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F3F138FD187462AE00E70FE7 /* Auto resizing NSTable Columns.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Auto resizing NSTable Columns.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3F13900187462AE00E70FE7 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		F3F13903187462AE00E70FE7 /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = System/Library/Frameworks/AppKit.framework; sourceTree = SDKROOT; };
+		F3F13904187462AE00E70FE7 /* CoreData.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreData.framework; path = System/Library/Frameworks/CoreData.framework; sourceTree = SDKROOT; };
+		F3F13905187462AE00E70FE7 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F3F13908187462AE00E70FE7 /* Auto resizing NSTable Columns-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Auto resizing NSTable Columns-Info.plist"; sourceTree = "<group>"; };
+		F3F1390A187462AE00E70FE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F3F1390C187462AE00E70FE7 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3F1390E187462AE00E70FE7 /* Auto resizing NSTable Columns-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Auto resizing NSTable Columns-Prefix.pch"; sourceTree = "<group>"; };
+		F3F13910187462AE00E70FE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.rtf; name = en; path = en.lproj/Credits.rtf; sourceTree = "<group>"; };
+		F3F13912187462AE00E70FE7 /* KLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLAppDelegate.h; sourceTree = "<group>"; };
+		F3F13913187462AE00E70FE7 /* KLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLAppDelegate.m; sourceTree = "<group>"; };
+		F3F13916187462AE00E70FE7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		F3F13918187462AE00E70FE7 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F3F1391E187462AE00E70FE7 /* Auto resizing NSTable ColumnsTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Auto resizing NSTable ColumnsTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3F1391F187462AE00E70FE7 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F3F13926187462AE00E70FE7 /* Auto resizing NSTable ColumnsTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Auto resizing NSTable ColumnsTests-Info.plist"; sourceTree = "<group>"; };
+		F3F13928187462AE00E70FE7 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F3F1392A187462AE00E70FE7 /* Auto_resizing_NSTable_ColumnsTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Auto_resizing_NSTable_ColumnsTests.m; sourceTree = "<group>"; };
+		F3F139341874652D00E70FE7 /* KLTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLTableView.h; sourceTree = "<group>"; };
+		F3F139351874652D00E70FE7 /* KLTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLTableView.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3F138FA187462AE00E70FE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F13901187462AE00E70FE7 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F1391B187462AE00E70FE7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F13921187462AE00E70FE7 /* Cocoa.framework in Frameworks */,
+				F3F13920187462AE00E70FE7 /* XCTest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F3F138F4187462AE00E70FE7 = {
+			isa = PBXGroup;
+			children = (
+				F3F13906187462AE00E70FE7 /* Auto resizing NSTable Columns */,
+				F3F13924187462AE00E70FE7 /* Auto resizing NSTable ColumnsTests */,
+				F3F138FF187462AE00E70FE7 /* Frameworks */,
+				F3F138FE187462AE00E70FE7 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3F138FE187462AE00E70FE7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3F138FD187462AE00E70FE7 /* Auto resizing NSTable Columns.app */,
+				F3F1391E187462AE00E70FE7 /* Auto resizing NSTable ColumnsTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3F138FF187462AE00E70FE7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3F13900187462AE00E70FE7 /* Cocoa.framework */,
+				F3F1391F187462AE00E70FE7 /* XCTest.framework */,
+				F3F13902187462AE00E70FE7 /* Other Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3F13902187462AE00E70FE7 /* Other Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3F13903187462AE00E70FE7 /* AppKit.framework */,
+				F3F13904187462AE00E70FE7 /* CoreData.framework */,
+				F3F13905187462AE00E70FE7 /* Foundation.framework */,
+			);
+			name = "Other Frameworks";
+			sourceTree = "<group>";
+		};
+		F3F13906187462AE00E70FE7 /* Auto resizing NSTable Columns */ = {
+			isa = PBXGroup;
+			children = (
+				F3F13912187462AE00E70FE7 /* KLAppDelegate.h */,
+				F3F13913187462AE00E70FE7 /* KLAppDelegate.m */,
+				F3F13915187462AE00E70FE7 /* MainMenu.xib */,
+				F3F13918187462AE00E70FE7 /* Images.xcassets */,
+				F3F13907187462AE00E70FE7 /* Supporting Files */,
+				F3F139371874653300E70FE7 /* KLTableView */,
+			);
+			path = "Auto resizing NSTable Columns";
+			sourceTree = "<group>";
+		};
+		F3F13907187462AE00E70FE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3F13908187462AE00E70FE7 /* Auto resizing NSTable Columns-Info.plist */,
+				F3F13909187462AE00E70FE7 /* InfoPlist.strings */,
+				F3F1390C187462AE00E70FE7 /* main.m */,
+				F3F1390E187462AE00E70FE7 /* Auto resizing NSTable Columns-Prefix.pch */,
+				F3F1390F187462AE00E70FE7 /* Credits.rtf */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3F13924187462AE00E70FE7 /* Auto resizing NSTable ColumnsTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3F1392A187462AE00E70FE7 /* Auto_resizing_NSTable_ColumnsTests.m */,
+				F3F13925187462AE00E70FE7 /* Supporting Files */,
+			);
+			path = "Auto resizing NSTable ColumnsTests";
+			sourceTree = "<group>";
+		};
+		F3F13925187462AE00E70FE7 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3F13926187462AE00E70FE7 /* Auto resizing NSTable ColumnsTests-Info.plist */,
+				F3F13927187462AE00E70FE7 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3F139371874653300E70FE7 /* KLTableView */ = {
+			isa = PBXGroup;
+			children = (
+				F3F139341874652D00E70FE7 /* KLTableView.h */,
+				F3F139351874652D00E70FE7 /* KLTableView.m */,
+			);
+			name = KLTableView;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3F138FC187462AE00E70FE7 /* Auto resizing NSTable Columns */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3F1392E187462AE00E70FE7 /* Build configuration list for PBXNativeTarget "Auto resizing NSTable Columns" */;
+			buildPhases = (
+				F3F138F9187462AE00E70FE7 /* Sources */,
+				F3F138FA187462AE00E70FE7 /* Frameworks */,
+				F3F138FB187462AE00E70FE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Auto resizing NSTable Columns";
+			productName = "Auto resizing NSTable Columns";
+			productReference = F3F138FD187462AE00E70FE7 /* Auto resizing NSTable Columns.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3F1391D187462AE00E70FE7 /* Auto resizing NSTable ColumnsTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3F13931187462AE00E70FE7 /* Build configuration list for PBXNativeTarget "Auto resizing NSTable ColumnsTests" */;
+			buildPhases = (
+				F3F1391A187462AE00E70FE7 /* Sources */,
+				F3F1391B187462AE00E70FE7 /* Frameworks */,
+				F3F1391C187462AE00E70FE7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3F13923187462AE00E70FE7 /* PBXTargetDependency */,
+			);
+			name = "Auto resizing NSTable ColumnsTests";
+			productName = "Auto resizing NSTable ColumnsTests";
+			productReference = F3F1391E187462AE00E70FE7 /* Auto resizing NSTable ColumnsTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3F138F5187462AE00E70FE7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KL;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Kantu Labs";
+				TargetAttributes = {
+					F3F1391D187462AE00E70FE7 = {
+						TestTargetID = F3F138FC187462AE00E70FE7;
+					};
+				};
+			};
+			buildConfigurationList = F3F138F8187462AE00E70FE7 /* Build configuration list for PBXProject "Auto resizing NSTable Columns" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3F138F4187462AE00E70FE7;
+			productRefGroup = F3F138FE187462AE00E70FE7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3F138FC187462AE00E70FE7 /* Auto resizing NSTable Columns */,
+				F3F1391D187462AE00E70FE7 /* Auto resizing NSTable ColumnsTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3F138FB187462AE00E70FE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F1390B187462AE00E70FE7 /* InfoPlist.strings in Resources */,
+				F3F13919187462AE00E70FE7 /* Images.xcassets in Resources */,
+				F3F13911187462AE00E70FE7 /* Credits.rtf in Resources */,
+				F3F13917187462AE00E70FE7 /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F1391C187462AE00E70FE7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F13929187462AE00E70FE7 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3F138F9187462AE00E70FE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F139361874652D00E70FE7 /* KLTableView.m in Sources */,
+				F3F1390D187462AE00E70FE7 /* main.m in Sources */,
+				F3F13914187462AE00E70FE7 /* KLAppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3F1391A187462AE00E70FE7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3F1392B187462AE00E70FE7 /* Auto_resizing_NSTable_ColumnsTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3F13923187462AE00E70FE7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3F138FC187462AE00E70FE7 /* Auto resizing NSTable Columns */;
+			targetProxy = F3F13922187462AE00E70FE7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3F13909187462AE00E70FE7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3F1390A187462AE00E70FE7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F3F1390F187462AE00E70FE7 /* Credits.rtf */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3F13910187462AE00E70FE7 /* en */,
+			);
+			name = Credits.rtf;
+			sourceTree = "<group>";
+		};
+		F3F13915187462AE00E70FE7 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3F13916187462AE00E70FE7 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+		F3F13927187462AE00E70FE7 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3F13928187462AE00E70FE7 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3F1392C187462AE00E70FE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		F3F1392D187462AE00E70FE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_ENABLE_OBJC_EXCEPTIONS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		F3F1392F187462AE00E70FE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Auto resizing NSTable Columns/Auto resizing NSTable Columns-Prefix.pch";
+				INFOPLIST_FILE = "Auto resizing NSTable Columns/Auto resizing NSTable Columns-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F3F13930187462AE00E70FE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Auto resizing NSTable Columns/Auto resizing NSTable Columns-Prefix.pch";
+				INFOPLIST_FILE = "Auto resizing NSTable Columns/Auto resizing NSTable Columns-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F3F13932187462AE00E70FE7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Auto resizing NSTable Columns.app/Contents/MacOS/Auto resizing NSTable Columns";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Auto resizing NSTable Columns/Auto resizing NSTable Columns-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Auto resizing NSTable ColumnsTests/Auto resizing NSTable ColumnsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F3F13933187462AE00E70FE7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/Auto resizing NSTable Columns.app/Contents/MacOS/Auto resizing NSTable Columns";
+				COMBINE_HIDPI_IMAGES = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+					"$(inherited)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "Auto resizing NSTable Columns/Auto resizing NSTable Columns-Prefix.pch";
+				INFOPLIST_FILE = "Auto resizing NSTable ColumnsTests/Auto resizing NSTable ColumnsTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3F138F8187462AE00E70FE7 /* Build configuration list for PBXProject "Auto resizing NSTable Columns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F1392C187462AE00E70FE7 /* Debug */,
+				F3F1392D187462AE00E70FE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3F1392E187462AE00E70FE7 /* Build configuration list for PBXNativeTarget "Auto resizing NSTable Columns" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F1392F187462AE00E70FE7 /* Debug */,
+				F3F13930187462AE00E70FE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		F3F13931187462AE00E70FE7 /* Build configuration list for PBXNativeTarget "Auto resizing NSTable ColumnsTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3F13932187462AE00E70FE7 /* Debug */,
+				F3F13933187462AE00E70FE7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3F138F5187462AE00E70FE7 /* Project object */;
+}
