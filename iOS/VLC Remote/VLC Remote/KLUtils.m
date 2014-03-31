@@ -39,11 +39,26 @@
     [_browserData addObject:aFile];
 }
 
+- (void)statusInfoFromXMLData:(NSData *)rawXMLData withCompletionHandler:(void (^)(NSDictionary *))onComplete {
+    self.statusCompletionHandler = onComplete;
+    _statusInfo = nil;
+    _statusInfo = [[NSMutableDictionary alloc] init];
+    NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:rawXMLData];
+    [xmlParser setDelegate:self];
+    [xmlParser parse];
+}
+
+- (void) appendToStatus:(NSDictionary*) info {
+    
+}
+
 #pragma mark - XML Parser
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
     if ([elementName isEqualToString:CHILD_ELEMENT])
         [self appendToBrowserData:attributeDict];
+    else if ([elementName isEqualToString:INFO_ELEMENT])
+        [self appendToStatus:attributeDict];
 }
 
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {

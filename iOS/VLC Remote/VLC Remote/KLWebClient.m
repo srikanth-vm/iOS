@@ -60,8 +60,21 @@
         if (response != nil)
             onComplete([[UIImage alloc] initWithData:response]);
         else
-            onComplete(nil);
+            onComplete([UIImage imageNamed:@"default_artwork"]);
     }];
+}
+
+- (void) vlcMediaControlCommand:(NSString*) command {
+    [self sendCommand:[self requestURLWithQuery:command] withCompletionHandler:nil];
+}
+
+- (NSDictionary *)trackStatusWithCompletionHandler:(void (^)(id))onComplete {
+    self.completionHandler = onComplete;
+    NSDictionary *stats = [[NSDictionary alloc] init];
+    [self sendCommand:[self requestURLWithQuery:STATUS] withCompletionHandler:^(id statusData) {
+        [self parseStatusXMLData:statusData];
+    }];
+    return stats;
 }
 
 #pragma mark -
@@ -71,6 +84,10 @@
     [utils fileFolderInfoFromXMLData:rawData withCompletionHandler:^(NSArray *fileFolders) {
         self.completionHandler(fileFolders);
     }];
+}
+
+- (void) parseStatusXMLData:(NSData*) rawData {
+    
 }
 
 @end

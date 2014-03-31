@@ -29,6 +29,10 @@
     [self refreshArtWork];
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    [self refreshArtWork];
+}
+
 #pragma mark - Remote Interface
 
 - (void) refreshArtWork {
@@ -40,7 +44,27 @@
 
 - (IBAction)browseFolderAction:(UIButton *)sender {
 }
+
 - (IBAction)remoteButtonTouched:(UIButton *)sender {
+    _webClient = [self vlcClient];
+    switch ([sender tag]) {
+        case 0:
+            [_webClient vlcMediaControlCommand:PREV_TRACK];
+            break;
+        
+        case 1:
+            [_webClient vlcMediaControlCommand:PLAY_PAUSE_TRACK];
+            break;
+            
+        case 2:
+            [_webClient vlcMediaControlCommand:NEXT_TRACK];
+            break;
+            
+        case 3:
+            [_webClient vlcMediaControlCommand:STOP_TRACK];
+            break;
+    }
+    [self performSelector:@selector(refreshArtWork) withObject:self afterDelay:3];
 }
 
 - (IBAction)volumeControl:(UISlider *)sender {

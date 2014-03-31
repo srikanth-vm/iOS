@@ -18,5 +18,7 @@
 - (void) browseFolderAtLocation:(id)currentFolder withCompletionHandler:(void(^)(id)) onComplete;
 - (void) playFile:(KLFile*) aFile;
 - (void) albumArtWithCompletionHandler:(void(^)(UIImage* artWork)) onComplete;
+- (void) vlcMediaControlCommand:(NSString*) command;
+- (NSDictionary*) trackStatusWithCompletionHandler:(void(^)(id)) onComplete;
 
 @end

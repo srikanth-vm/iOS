@@ -18,13 +18,17 @@ typedef enum BrowserFileType:NSInteger {
 @interface KLUtils : NSObject <NSXMLParserDelegate>
 
 @property (copy, nonatomic) void(^completionHandler)(NSArray*);
+@property (copy, nonatomic) void(^statusCompletionHandler)(NSDictionary*);
 @property (strong, nonatomic) NSMutableArray *browserData;
+@property (strong, nonatomic) NSMutableDictionary *statusInfo;
 
 + (id) sharedUtils;
 - (void) fileFolderInfoFromXMLData:(NSData*) rawXMLData
-          withCompletionHandler:(void(^)(NSArray* fileFolders)) onComplete;
+             withCompletionHandler:(void(^)(NSArray* fileFolders)) onComplete;
 - (BOOL) isMediaFile:(KLFile*) aFile;
 - (void) showAlertWithTitle:(NSString*) title andMessage:(NSString*) message;
 - (BrowserFileType) fileType:(KLFile*) aFile;
+- (void) statusInfoFromXMLData:(NSData*) rawXMLData
+         withCompletionHandler:(void(^)(NSDictionary*)) onComplete
 
 @end
