@@ -1,0 +1,650 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F30D74D718E877EA00FAB214 /* KLUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = F30D74D618E877EA00FAB214 /* KLUtils.m */; };
+		F30F711F18E73CD9000B59AC /* KLRemoteViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F30F711E18E73CD9000B59AC /* KLRemoteViewController.m */; };
+		F3D1DE6918E841630028E03F /* AFHTTPRequestOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D1DE5718E841630028E03F /* AFHTTPRequestOperation.m */; };
+		F3D1DE6A18E841630028E03F /* AFHTTPRequestOperationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D1DE5918E841630028E03F /* AFHTTPRequestOperationManager.m */; };
+		F3D1DE6B18E841630028E03F /* AFHTTPSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D1DE5B18E841630028E03F /* AFHTTPSessionManager.m */; };
+		F3D1DE6C18E841630028E03F /* AFNetworkReachabilityManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D1DE5E18E841630028E03F /* AFNetworkReachabilityManager.m */; };
+		F3D1DE6D18E841630028E03F /* AFSecurityPolicy.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D1DE6018E841630028E03F /* AFSecurityPolicy.m */; };
+		F3D1DE6E18E841630028E03F /* AFURLConnectionOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D1DE6218E841630028E03F /* AFURLConnectionOperation.m */; };
+		F3D1DE6F18E841630028E03F /* AFURLRequestSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D1DE6418E841630028E03F /* AFURLRequestSerialization.m */; };
+		F3D1DE7018E841630028E03F /* AFURLResponseSerialization.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D1DE6618E841630028E03F /* AFURLResponseSerialization.m */; };
+		F3D1DE7118E841630028E03F /* AFURLSessionManager.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D1DE6818E841630028E03F /* AFURLSessionManager.m */; };
+		F3D1DE7418E841930028E03F /* KLWebClient.m in Sources */ = {isa = PBXBuildFile; fileRef = F3D1DE7318E841930028E03F /* KLWebClient.m */; };
+		F3DCC0C518E3194D00CC912E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DCC0C418E3194D00CC912E /* Foundation.framework */; };
+		F3DCC0C718E3194D00CC912E /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DCC0C618E3194D00CC912E /* CoreGraphics.framework */; };
+		F3DCC0C918E3194D00CC912E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DCC0C818E3194D00CC912E /* UIKit.framework */; };
+		F3DCC0CF18E3194D00CC912E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3DCC0CD18E3194D00CC912E /* InfoPlist.strings */; };
+		F3DCC0D118E3194D00CC912E /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DCC0D018E3194D00CC912E /* main.m */; };
+		F3DCC0D518E3194D00CC912E /* KLAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DCC0D418E3194D00CC912E /* KLAppDelegate.m */; };
+		F3DCC0D818E3194D00CC912E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3DCC0D618E3194D00CC912E /* Main.storyboard */; };
+		F3DCC0DB18E3194D00CC912E /* KLViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DCC0DA18E3194D00CC912E /* KLViewController.m */; };
+		F3DCC0DD18E3194D00CC912E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3DCC0DC18E3194D00CC912E /* Images.xcassets */; };
+		F3DCC0E418E3194D00CC912E /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DCC0E318E3194D00CC912E /* XCTest.framework */; };
+		F3DCC0E518E3194D00CC912E /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DCC0C418E3194D00CC912E /* Foundation.framework */; };
+		F3DCC0E618E3194D00CC912E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3DCC0C818E3194D00CC912E /* UIKit.framework */; };
+		F3DCC0EE18E3194D00CC912E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = F3DCC0EC18E3194D00CC912E /* InfoPlist.strings */; };
+		F3DCC0F018E3194D00CC912E /* VLC_RemoteTests.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DCC0EF18E3194D00CC912E /* VLC_RemoteTests.m */; };
+		F3DF30C918E7FDCD00CA670B /* KLBrowseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F3DF30C818E7FDCD00CA670B /* KLBrowseViewController.m */; };
+		F3E1191C18E98776008903D6 /* KLBrowseTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E1191B18E98776008903D6 /* KLBrowseTableViewCell.m */; };
+		F3E5463018E889BF0065F05F /* KLFile.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E5462F18E889BF0065F05F /* KLFile.m */; };
+		F3E5463518E88CDD0065F05F /* KLBrowseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = F3E5463418E88CDD0065F05F /* KLBrowseModel.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F3DCC0E718E3194D00CC912E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F3DCC0B918E3194D00CC912E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F3DCC0C018E3194D00CC912E;
+			remoteInfo = "VLC Remote";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F30D74D518E877EA00FAB214 /* KLUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLUtils.h; sourceTree = "<group>"; };
+		F30D74D618E877EA00FAB214 /* KLUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLUtils.m; sourceTree = "<group>"; };
+		F30F711D18E73CD9000B59AC /* KLRemoteViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLRemoteViewController.h; sourceTree = "<group>"; };
+		F30F711E18E73CD9000B59AC /* KLRemoteViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLRemoteViewController.m; sourceTree = "<group>"; };
+		F3D1DE5618E841630028E03F /* AFHTTPRequestOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperation.h; sourceTree = "<group>"; };
+		F3D1DE5718E841630028E03F /* AFHTTPRequestOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperation.m; sourceTree = "<group>"; };
+		F3D1DE5818E841630028E03F /* AFHTTPRequestOperationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPRequestOperationManager.h; sourceTree = "<group>"; };
+		F3D1DE5918E841630028E03F /* AFHTTPRequestOperationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPRequestOperationManager.m; sourceTree = "<group>"; };
+		F3D1DE5A18E841630028E03F /* AFHTTPSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFHTTPSessionManager.h; sourceTree = "<group>"; };
+		F3D1DE5B18E841630028E03F /* AFHTTPSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFHTTPSessionManager.m; sourceTree = "<group>"; };
+		F3D1DE5C18E841630028E03F /* AFNetworking.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworking.h; sourceTree = "<group>"; };
+		F3D1DE5D18E841630028E03F /* AFNetworkReachabilityManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFNetworkReachabilityManager.h; sourceTree = "<group>"; };
+		F3D1DE5E18E841630028E03F /* AFNetworkReachabilityManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFNetworkReachabilityManager.m; sourceTree = "<group>"; };
+		F3D1DE5F18E841630028E03F /* AFSecurityPolicy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFSecurityPolicy.h; sourceTree = "<group>"; };
+		F3D1DE6018E841630028E03F /* AFSecurityPolicy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFSecurityPolicy.m; sourceTree = "<group>"; };
+		F3D1DE6118E841630028E03F /* AFURLConnectionOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLConnectionOperation.h; sourceTree = "<group>"; };
+		F3D1DE6218E841630028E03F /* AFURLConnectionOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLConnectionOperation.m; sourceTree = "<group>"; };
+		F3D1DE6318E841630028E03F /* AFURLRequestSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLRequestSerialization.h; sourceTree = "<group>"; };
+		F3D1DE6418E841630028E03F /* AFURLRequestSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLRequestSerialization.m; sourceTree = "<group>"; };
+		F3D1DE6518E841630028E03F /* AFURLResponseSerialization.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLResponseSerialization.h; sourceTree = "<group>"; };
+		F3D1DE6618E841630028E03F /* AFURLResponseSerialization.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLResponseSerialization.m; sourceTree = "<group>"; };
+		F3D1DE6718E841630028E03F /* AFURLSessionManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AFURLSessionManager.h; sourceTree = "<group>"; };
+		F3D1DE6818E841630028E03F /* AFURLSessionManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AFURLSessionManager.m; sourceTree = "<group>"; };
+		F3D1DE7218E841930028E03F /* KLWebClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLWebClient.h; sourceTree = "<group>"; };
+		F3D1DE7318E841930028E03F /* KLWebClient.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLWebClient.m; sourceTree = "<group>"; };
+		F3D1DE7518E846630028E03F /* Constants.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
+		F3DCC0C118E3194D00CC912E /* VLC Remote.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "VLC Remote.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3DCC0C418E3194D00CC912E /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		F3DCC0C618E3194D00CC912E /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		F3DCC0C818E3194D00CC912E /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		F3DCC0CC18E3194D00CC912E /* VLC Remote-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VLC Remote-Info.plist"; sourceTree = "<group>"; };
+		F3DCC0CE18E3194D00CC912E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F3DCC0D018E3194D00CC912E /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		F3DCC0D218E3194D00CC912E /* VLC Remote-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "VLC Remote-Prefix.pch"; sourceTree = "<group>"; };
+		F3DCC0D318E3194D00CC912E /* KLAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLAppDelegate.h; sourceTree = "<group>"; };
+		F3DCC0D418E3194D00CC912E /* KLAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLAppDelegate.m; sourceTree = "<group>"; };
+		F3DCC0D718E3194D00CC912E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F3DCC0D918E3194D00CC912E /* KLViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = KLViewController.h; sourceTree = "<group>"; };
+		F3DCC0DA18E3194D00CC912E /* KLViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KLViewController.m; sourceTree = "<group>"; };
+		F3DCC0DC18E3194D00CC912E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F3DCC0E218E3194D00CC912E /* VLC RemoteTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "VLC RemoteTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F3DCC0E318E3194D00CC912E /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		F3DCC0EB18E3194D00CC912E /* VLC RemoteTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VLC RemoteTests-Info.plist"; sourceTree = "<group>"; };
+		F3DCC0ED18E3194D00CC912E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		F3DCC0EF18E3194D00CC912E /* VLC_RemoteTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VLC_RemoteTests.m; sourceTree = "<group>"; };
+		F3DF30C718E7FDCD00CA670B /* KLBrowseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLBrowseViewController.h; sourceTree = "<group>"; };
+		F3DF30C818E7FDCD00CA670B /* KLBrowseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLBrowseViewController.m; sourceTree = "<group>"; };
+		F3E1191A18E98776008903D6 /* KLBrowseTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLBrowseTableViewCell.h; sourceTree = "<group>"; };
+		F3E1191B18E98776008903D6 /* KLBrowseTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLBrowseTableViewCell.m; sourceTree = "<group>"; };
+		F3E5462E18E889BF0065F05F /* KLFile.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLFile.h; sourceTree = "<group>"; };
+		F3E5462F18E889BF0065F05F /* KLFile.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLFile.m; sourceTree = "<group>"; };
+		F3E5463318E88CDD0065F05F /* KLBrowseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KLBrowseModel.h; sourceTree = "<group>"; };
+		F3E5463418E88CDD0065F05F /* KLBrowseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KLBrowseModel.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F3DCC0BE18E3194D00CC912E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3DCC0C718E3194D00CC912E /* CoreGraphics.framework in Frameworks */,
+				F3DCC0C918E3194D00CC912E /* UIKit.framework in Frameworks */,
+				F3DCC0C518E3194D00CC912E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3DCC0DF18E3194D00CC912E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3DCC0E418E3194D00CC912E /* XCTest.framework in Frameworks */,
+				F3DCC0E618E3194D00CC912E /* UIKit.framework in Frameworks */,
+				F3DCC0E518E3194D00CC912E /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F30D74D818E87D5100FAB214 /* Commons */ = {
+			isa = PBXGroup;
+			children = (
+				F3E5462E18E889BF0065F05F /* KLFile.h */,
+				F3E5462F18E889BF0065F05F /* KLFile.m */,
+				F3D1DE7518E846630028E03F /* Constants.h */,
+				F30D74D518E877EA00FAB214 /* KLUtils.h */,
+				F30D74D618E877EA00FAB214 /* KLUtils.m */,
+			);
+			name = Commons;
+			sourceTree = "<group>";
+		};
+		F3D1DE5318E8405B0028E03F /* WebClient */ = {
+			isa = PBXGroup;
+			children = (
+				F3D1DE7218E841930028E03F /* KLWebClient.h */,
+				F3D1DE7318E841930028E03F /* KLWebClient.m */,
+			);
+			name = WebClient;
+			sourceTree = "<group>";
+		};
+		F3D1DE5418E8408C0028E03F /* Libraries */ = {
+			isa = PBXGroup;
+			children = (
+				F3D1DE5518E841630028E03F /* AFNetworking */,
+			);
+			name = Libraries;
+			sourceTree = "<group>";
+		};
+		F3D1DE5518E841630028E03F /* AFNetworking */ = {
+			isa = PBXGroup;
+			children = (
+				F3D1DE5618E841630028E03F /* AFHTTPRequestOperation.h */,
+				F3D1DE5718E841630028E03F /* AFHTTPRequestOperation.m */,
+				F3D1DE5818E841630028E03F /* AFHTTPRequestOperationManager.h */,
+				F3D1DE5918E841630028E03F /* AFHTTPRequestOperationManager.m */,
+				F3D1DE5A18E841630028E03F /* AFHTTPSessionManager.h */,
+				F3D1DE5B18E841630028E03F /* AFHTTPSessionManager.m */,
+				F3D1DE5C18E841630028E03F /* AFNetworking.h */,
+				F3D1DE5D18E841630028E03F /* AFNetworkReachabilityManager.h */,
+				F3D1DE5E18E841630028E03F /* AFNetworkReachabilityManager.m */,
+				F3D1DE5F18E841630028E03F /* AFSecurityPolicy.h */,
+				F3D1DE6018E841630028E03F /* AFSecurityPolicy.m */,
+				F3D1DE6118E841630028E03F /* AFURLConnectionOperation.h */,
+				F3D1DE6218E841630028E03F /* AFURLConnectionOperation.m */,
+				F3D1DE6318E841630028E03F /* AFURLRequestSerialization.h */,
+				F3D1DE6418E841630028E03F /* AFURLRequestSerialization.m */,
+				F3D1DE6518E841630028E03F /* AFURLResponseSerialization.h */,
+				F3D1DE6618E841630028E03F /* AFURLResponseSerialization.m */,
+				F3D1DE6718E841630028E03F /* AFURLSessionManager.h */,
+				F3D1DE6818E841630028E03F /* AFURLSessionManager.m */,
+			);
+			path = AFNetworking;
+			sourceTree = "<group>";
+		};
+		F3DCC0B818E3194D00CC912E = {
+			isa = PBXGroup;
+			children = (
+				F3DCC0CA18E3194D00CC912E /* VLC Remote */,
+				F3DCC0E918E3194D00CC912E /* VLC RemoteTests */,
+				F3DCC0C318E3194D00CC912E /* Frameworks */,
+				F3DCC0C218E3194D00CC912E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F3DCC0C218E3194D00CC912E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F3DCC0C118E3194D00CC912E /* VLC Remote.app */,
+				F3DCC0E218E3194D00CC912E /* VLC RemoteTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F3DCC0C318E3194D00CC912E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F3DCC0C418E3194D00CC912E /* Foundation.framework */,
+				F3DCC0C618E3194D00CC912E /* CoreGraphics.framework */,
+				F3DCC0C818E3194D00CC912E /* UIKit.framework */,
+				F3DCC0E318E3194D00CC912E /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F3DCC0CA18E3194D00CC912E /* VLC Remote */ = {
+			isa = PBXGroup;
+			children = (
+				F3E5463118E88A420065F05F /* ViewControllers */,
+				F30D74D818E87D5100FAB214 /* Commons */,
+				F3D1DE5418E8408C0028E03F /* Libraries */,
+				F3D1DE5318E8405B0028E03F /* WebClient */,
+				F3DCC0D318E3194D00CC912E /* KLAppDelegate.h */,
+				F3DCC0D418E3194D00CC912E /* KLAppDelegate.m */,
+				F3DCC0D618E3194D00CC912E /* Main.storyboard */,
+				F3DCC0DC18E3194D00CC912E /* Images.xcassets */,
+				F3DCC0CB18E3194D00CC912E /* Supporting Files */,
+			);
+			path = "VLC Remote";
+			sourceTree = "<group>";
+		};
+		F3DCC0CB18E3194D00CC912E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3DCC0CC18E3194D00CC912E /* VLC Remote-Info.plist */,
+				F3DCC0CD18E3194D00CC912E /* InfoPlist.strings */,
+				F3DCC0D018E3194D00CC912E /* main.m */,
+				F3DCC0D218E3194D00CC912E /* VLC Remote-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3DCC0E918E3194D00CC912E /* VLC RemoteTests */ = {
+			isa = PBXGroup;
+			children = (
+				F3DCC0EF18E3194D00CC912E /* VLC_RemoteTests.m */,
+				F3DCC0EA18E3194D00CC912E /* Supporting Files */,
+			);
+			path = "VLC RemoteTests";
+			sourceTree = "<group>";
+		};
+		F3DCC0EA18E3194D00CC912E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F3DCC0EB18E3194D00CC912E /* VLC RemoteTests-Info.plist */,
+				F3DCC0EC18E3194D00CC912E /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F3DF30C318E7FD5400CA670B /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				F3E1191D18E992ED008903D6 /* Browser */,
+				F30F711D18E73CD9000B59AC /* KLRemoteViewController.h */,
+				F30F711E18E73CD9000B59AC /* KLRemoteViewController.m */,
+			);
+			name = Remote;
+			sourceTree = "<group>";
+		};
+		F3E1191D18E992ED008903D6 /* Browser */ = {
+			isa = PBXGroup;
+			children = (
+				F3E5463218E88CC80065F05F /* Model */,
+				F3DF30C718E7FDCD00CA670B /* KLBrowseViewController.h */,
+				F3DF30C818E7FDCD00CA670B /* KLBrowseViewController.m */,
+				F3E1191E18E992FE008903D6 /* Table Cell */,
+			);
+			name = Browser;
+			sourceTree = "<group>";
+		};
+		F3E1191E18E992FE008903D6 /* Table Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F3E1191A18E98776008903D6 /* KLBrowseTableViewCell.h */,
+				F3E1191B18E98776008903D6 /* KLBrowseTableViewCell.m */,
+			);
+			name = "Table Cell";
+			sourceTree = "<group>";
+		};
+		F3E5463118E88A420065F05F /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				F3DCC0D918E3194D00CC912E /* KLViewController.h */,
+				F3DCC0DA18E3194D00CC912E /* KLViewController.m */,
+				F3DF30C318E7FD5400CA670B /* Remote */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		F3E5463218E88CC80065F05F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F3E5463318E88CDD0065F05F /* KLBrowseModel.h */,
+				F3E5463418E88CDD0065F05F /* KLBrowseModel.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F3DCC0C018E3194D00CC912E /* VLC Remote */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3DCC0F318E3194D00CC912E /* Build configuration list for PBXNativeTarget "VLC Remote" */;
+			buildPhases = (
+				F3DCC0BD18E3194D00CC912E /* Sources */,
+				F3DCC0BE18E3194D00CC912E /* Frameworks */,
+				F3DCC0BF18E3194D00CC912E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "VLC Remote";
+			productName = "VLC Remote";
+			productReference = F3DCC0C118E3194D00CC912E /* VLC Remote.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F3DCC0E118E3194D00CC912E /* VLC RemoteTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F3DCC0F618E3194D00CC912E /* Build configuration list for PBXNativeTarget "VLC RemoteTests" */;
+			buildPhases = (
+				F3DCC0DE18E3194D00CC912E /* Sources */,
+				F3DCC0DF18E3194D00CC912E /* Frameworks */,
+				F3DCC0E018E3194D00CC912E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F3DCC0E818E3194D00CC912E /* PBXTargetDependency */,
+			);
+			name = "VLC RemoteTests";
+			productName = "VLC RemoteTests";
+			productReference = F3DCC0E218E3194D00CC912E /* VLC RemoteTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F3DCC0B918E3194D00CC912E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = KL;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = "Kantu Labs";
+				TargetAttributes = {
+					F3DCC0E118E3194D00CC912E = {
+						TestTargetID = F3DCC0C018E3194D00CC912E;
+					};
+				};
+			};
+			buildConfigurationList = F3DCC0BC18E3194D00CC912E /* Build configuration list for PBXProject "VLC Remote" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F3DCC0B818E3194D00CC912E;
+			productRefGroup = F3DCC0C218E3194D00CC912E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F3DCC0C018E3194D00CC912E /* VLC Remote */,
+				F3DCC0E118E3194D00CC912E /* VLC RemoteTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F3DCC0BF18E3194D00CC912E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3DCC0DD18E3194D00CC912E /* Images.xcassets in Resources */,
+				F3DCC0CF18E3194D00CC912E /* InfoPlist.strings in Resources */,
+				F3DCC0D818E3194D00CC912E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3DCC0E018E3194D00CC912E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3DCC0EE18E3194D00CC912E /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F3DCC0BD18E3194D00CC912E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3D1DE6E18E841630028E03F /* AFURLConnectionOperation.m in Sources */,
+				F3D1DE6918E841630028E03F /* AFHTTPRequestOperation.m in Sources */,
+				F3D1DE6C18E841630028E03F /* AFNetworkReachabilityManager.m in Sources */,
+				F3E5463018E889BF0065F05F /* KLFile.m in Sources */,
+				F3D1DE7118E841630028E03F /* AFURLSessionManager.m in Sources */,
+				F30D74D718E877EA00FAB214 /* KLUtils.m in Sources */,
+				F3D1DE6F18E841630028E03F /* AFURLRequestSerialization.m in Sources */,
+				F3DF30C918E7FDCD00CA670B /* KLBrowseViewController.m in Sources */,
+				F3D1DE7018E841630028E03F /* AFURLResponseSerialization.m in Sources */,
+				F3DCC0DB18E3194D00CC912E /* KLViewController.m in Sources */,
+				F30F711F18E73CD9000B59AC /* KLRemoteViewController.m in Sources */,
+				F3D1DE6A18E841630028E03F /* AFHTTPRequestOperationManager.m in Sources */,
+				F3E5463518E88CDD0065F05F /* KLBrowseModel.m in Sources */,
+				F3E1191C18E98776008903D6 /* KLBrowseTableViewCell.m in Sources */,
+				F3D1DE7418E841930028E03F /* KLWebClient.m in Sources */,
+				F3D1DE6D18E841630028E03F /* AFSecurityPolicy.m in Sources */,
+				F3DCC0D118E3194D00CC912E /* main.m in Sources */,
+				F3DCC0D518E3194D00CC912E /* KLAppDelegate.m in Sources */,
+				F3D1DE6B18E841630028E03F /* AFHTTPSessionManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F3DCC0DE18E3194D00CC912E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3DCC0F018E3194D00CC912E /* VLC_RemoteTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F3DCC0E818E3194D00CC912E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F3DCC0C018E3194D00CC912E /* VLC Remote */;
+			targetProxy = F3DCC0E718E3194D00CC912E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F3DCC0CD18E3194D00CC912E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3DCC0CE18E3194D00CC912E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		F3DCC0D618E3194D00CC912E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3DCC0D718E3194D00CC912E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F3DCC0EC18E3194D00CC912E /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F3DCC0ED18E3194D00CC912E /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F3DCC0F118E3194D00CC912E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		F3DCC0F218E3194D00CC912E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F3DCC0F418E3194D00CC912E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VLC Remote/VLC Remote-Prefix.pch";
+				INFOPLIST_FILE = "VLC Remote/VLC Remote-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		F3DCC0F518E3194D00CC912E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VLC Remote/VLC Remote-Prefix.pch";
+				INFOPLIST_FILE = "VLC Remote/VLC Remote-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		F3DCC0F718E3194D00CC912E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VLC Remote.app/VLC Remote";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VLC Remote/VLC Remote-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "VLC RemoteTests/VLC RemoteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		F3DCC0F818E3194D00CC912E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/VLC Remote.app/VLC Remote";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "VLC Remote/VLC Remote-Prefix.pch";
+				INFOPLIST_FILE = "VLC RemoteTests/VLC RemoteTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F3DCC0BC18E3194D00CC912E /* Build configuration list for PBXProject "VLC Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3DCC0F118E3194D00CC912E /* Debug */,
+				F3DCC0F218E3194D00CC912E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3DCC0F318E3194D00CC912E /* Build configuration list for PBXNativeTarget "VLC Remote" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3DCC0F418E3194D00CC912E /* Debug */,
+				F3DCC0F518E3194D00CC912E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F3DCC0F618E3194D00CC912E /* Build configuration list for PBXNativeTarget "VLC RemoteTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F3DCC0F718E3194D00CC912E /* Debug */,
+				F3DCC0F818E3194D00CC912E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F3DCC0B918E3194D00CC912E /* Project object */;
+}
