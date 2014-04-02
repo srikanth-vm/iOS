@@ -29,6 +29,6 @@ typedef enum BrowserFileType:NSInteger {
 - (void) showAlertWithTitle:(NSString*) title andMessage:(NSString*) message;
 - (BrowserFileType) fileType:(KLFile*) aFile;
 - (void) statusInfoFromXMLData:(NSData*) rawXMLData
-         withCompletionHandler:(void(^)(NSDictionary*)) onComplete
+         withCompletionHandler:(void(^)(NSDictionary*)) onComplete;
 
 @end
