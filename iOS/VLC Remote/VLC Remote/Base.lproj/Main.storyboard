@@ -25,11 +25,11 @@
                                     <segue destination="RTo-wP-OJ8" kind="push" id="mB5-fl-aJV"/>
                                 </connections>
                             </button>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="fQR-Qb-cWf" userLabel="VolumeControl">
-                                <rect key="frame" x="18" y="467" width="284" height="34"/>
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="0.0" maxValue="512" translatesAutoresizingMaskIntoConstraints="NO" id="fQR-Qb-cWf" userLabel="VolumeControl">
+                                <rect key="frame" x="18" y="457" width="284" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
-                                    <action selector="volumeControl:" destination="hmk-R1-jDG" eventType="valueChanged" id="0nH-UN-Za7"/>
+                                    <action selector="volumeSliderChanged:" destination="hmk-R1-jDG" eventType="valueChanged" id="oSJ-4d-f1w"/>
                                 </connections>
                             </slider>
                             <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" fixedFrame="YES" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="Lvz-ch-jFZ" userLabel="TrackProgress">
@@ -101,6 +101,13 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GZa-vu-lkg" userLabel="Volume Level">
+                                <rect key="frame" x="139" y="490" width="42" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="16"/>
+                                <color key="textColor" red="0.97254901959999995" green="0.59999999999999998" blue="0.10980392160000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
@@ -112,6 +119,7 @@
                         <outlet property="playPause" destination="cvs-9S-wHY" id="LFv-m6-On5"/>
                         <outlet property="trackProgressBar" destination="Lvz-ch-jFZ" id="2PJ-mB-Zyf"/>
                         <outlet property="trackTitle" destination="eCh-JI-GG7" id="trj-5D-xJG"/>
+                        <outlet property="volumeLevelIndicator" destination="GZa-vu-lkg" id="4rb-i6-nYw"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kc7-vs-wG4" userLabel="First Responder" sceneMemberID="firstResponder"/>

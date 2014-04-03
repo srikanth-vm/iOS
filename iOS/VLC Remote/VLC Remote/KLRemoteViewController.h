@@ -20,9 +20,10 @@
 @property (strong, nonatomic) IBOutlet UIImageView *artWork;
 @property (strong, nonatomic) IBOutlet UIButton *playPause;
 @property (strong, nonatomic) IBOutlet UIProgressView *trackProgressBar;
+@property (strong, nonatomic) IBOutlet UILabel *volumeLevelIndicator;
 
 - (IBAction)browseFolderAction:(UIButton *)sender;
 - (IBAction)remoteButtonTouched:(UIButton *)sender;
-- (IBAction)volumeControl:(UISlider *)sender;
+- (IBAction)volumeSliderChanged:(UISlider *)sender;
 
 @end

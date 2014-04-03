@@ -22,5 +22,6 @@
 - (void) albumArtWithCompletionHandler:(void(^)(UIImage* artWork)) onComplete;
 - (void) vlcMediaControlCommand:(NSString*) command;
 - (NSDictionary*) trackStatusWithCompletionHandler:(void(^)(id)) onComplete;
+- (void) setVolumeTo:(NSString*) level;
 
 @end

@@ -80,7 +80,20 @@
     [self performSelector:@selector(refreshTrackStatus) withObject:self afterDelay:2];
 }
 
-- (IBAction)volumeControl:(UISlider *)sender {
+- (IBAction)volumeSliderChanged:(UISlider *)sender {
+    _webClient = [self vlcClient];
+    int val = (int) ceil(sender.value);
+    NSNumber *volumeLevel = @(val);
+    [_webClient setVolumeTo:[volumeLevel stringValue]];
+    [self updateVolumeTextWith:val];
+}
+
+#pragma mark -
+
+- (void) updateVolumeTextWith:(int) val {
+    float volumeIndicator = ceil((double) ((double) val/ 512.0) * 200.0);
+    NSNumber *volumePercentile = @(volumeIndicator);
+    [_volumeLevelIndicator setText:[volumePercentile stringValue]];
 }
 
 - (KLWebClient*) vlcClient {

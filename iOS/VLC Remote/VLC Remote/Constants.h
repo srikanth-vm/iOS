@@ -10,6 +10,8 @@
 
 #define STATUS             @"/requests/status.xml"
 #define BROWSE             @"/requests/browse.xml?uri="
+#define ARTWORK            @"/art"
+#define VOLUME             STATUS @"?command=volume&val="
 #define PLAY_FILE          STATUS @"?command=in_play&input="
 #define NEXT_TRACK         STATUS @"?command=pl_next"
 #define PREV_TRACK         STATUS @"?command=pl_previous"

@@ -13,7 +13,7 @@
 #pragma mark - VLC Requests
 
 - (NSURL*) requestURLWithQuery:(NSString*) query {
-    NSString *baseURL = @"http://localhost:8080";
+    NSString *baseURL = @"http://192.168.1.3:8080";
     NSString *request = [NSString stringWithFormat:@"%@%@", baseURL, query];
     return [NSURL URLWithString:request];
 }
@@ -57,7 +57,7 @@
 }
 
 - (void) albumArtWithCompletionHandler:(void(^)(UIImage*)) onComplete {
-    NSString *query = @"/art";
+    NSString *query = ARTWORK;
     [self sendCommand:[self requestURLWithQuery:query] withCompletionHandler:^(id response) {
         if (response != nil)
             onComplete([[UIImage alloc] initWithData:response]);
@@ -79,6 +79,11 @@
         [self parseStatusXMLData:statusData];
     }];
     return stats;
+}
+
+- (void)setVolumeTo:(NSString *)level {
+    NSString *query = [NSString stringWithFormat:@"%@%@", VOLUME, level];
+    [self sendCommand:[self requestURLWithQuery:query] withCompletionHandler:nil];
 }
 
 #pragma mark -
