@@ -14,6 +14,8 @@
 
 @property (strong, nonatomic) AFHTTPRequestOperationManager *requestManager;
 @property (copy, nonatomic) void(^completionHandler)(id);
+@property (assign, nonatomic) BOOL isXMLParsingBrowser;
+@property (assign, nonatomic) BOOL isXMLParsingStatus;
 
 - (void) browseFolderAtLocation:(id)currentFolder withCompletionHandler:(void(^)(id)) onComplete;
 - (void) playFile:(KLFile*) aFile;

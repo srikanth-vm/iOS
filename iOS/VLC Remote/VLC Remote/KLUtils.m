@@ -23,8 +23,11 @@
 
 - (void)fileFolderInfoFromXMLData:(NSData *)rawXMLData withCompletionHandler:(void (^)(NSArray *))onComplete {
     self.completionHandler = onComplete;
+    self.isParsingCategory = NO;
+    self.isParsingInfo = NO;
     _browserData = nil;
     self.browserData = [[NSMutableArray alloc] init];
+    _statusInfo = nil;
     NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:rawXMLData];
     [xmlParser setDelegate:self];
     [xmlParser parse];
@@ -41,8 +44,11 @@
 
 - (void)statusInfoFromXMLData:(NSData *)rawXMLData withCompletionHandler:(void (^)(NSDictionary *))onComplete {
     self.statusCompletionHandler = onComplete;
+    self.isParsingCategory = NO;
+    self.isParsingInfo = NO;
     _statusInfo = nil;
     _statusInfo = [[NSMutableDictionary alloc] init];
+    _browserData = nil;
     NSXMLParser *xmlParser = [[NSXMLParser alloc] initWithData:rawXMLData];
     [xmlParser setDelegate:self];
     [xmlParser parse];
@@ -55,19 +61,45 @@
 #pragma mark - XML Parser
 
 - (void)parser:(NSXMLParser *)parser didStartElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName attributes:(NSDictionary *)attributeDict {
+    _infoMetaData = nil;
+    _infoMetaData = [[NSMutableString alloc] init];
     if ([elementName isEqualToString:CHILD_ELEMENT])
         [self appendToBrowserData:attributeDict];
-    else if ([elementName isEqualToString:INFO_ELEMENT])
-        [self appendToStatus:attributeDict];
+    else if ([elementName isEqualToString:CATEGORY_ELEMENT] &&
+             [[attributeDict objectForKey:@"name"] isEqualToString:@"meta"])
+        self.isParsingCategory = YES;
+    else if ([elementName isEqualToString:INFO_ELEMENT]) {
+        if (self.isParsingCategory)
+            self.infoMetaName = [attributeDict objectForKey:@"name"];
+        self.isParsingInfo = YES;
+    }
+}
+
+- (void)parser:(NSXMLParser *)parser foundCharacters:(NSString *)string {
+    if (self.isParsingCategory && self.isParsingInfo) {
+        [_infoMetaData appendString:string];
+    }
 }
 
 - (void)parser:(NSXMLParser *)parser didEndElement:(NSString *)elementName namespaceURI:(NSString *)namespaceURI qualifiedName:(NSString *)qName {
     if ([elementName isEqualToString:ROOT_ELEMENT])
         [self completeParsing];
+    else if ([elementName isEqualToString:CATEGORY_ELEMENT])
+        self.isParsingCategory = NO;
+    else if ([elementName isEqualToString:INFO_ELEMENT] &&
+             self.isParsingCategory &&
+             self.isParsingInfo) {
+        self.isParsingInfo = NO;
+        [self.statusInfo setObject:_infoMetaData forKey:_infoMetaName];
+    }
 }
 
 - (void) completeParsing {
-    self.completionHandler(_browserData);
+    if (_browserData != nil)
+        self.completionHandler(_browserData);
+    else if (_statusInfo != nil)
+        self.statusCompletionHandler(_statusInfo);
+        
 }
 
 #pragma mark - File validation
@@ -110,6 +142,29 @@
         return Audio;
     else
         return Generic;
+}
+
+- (NSString *)lastVisitedDirectory {
+    NSUserDefaults *sharedUserDefaults = [NSUserDefaults standardUserDefaults];
+    return [sharedUserDefaults valueForKey:LAST_VISITED_DIR];
+    
+}
+
+- (void)updateCurrentDirectory:(NSString *)currentDir {
+    NSUserDefaults *sharedUserDefaults = [NSUserDefaults standardUserDefaults];
+    [sharedUserDefaults setValue:currentDir forKey:LAST_VISITED_DIR];
+    [sharedUserDefaults synchronize];
+}
+
+- (NSString *)remoteIP {
+    NSUserDefaults *sharedDefaults = [NSUserDefaults standardUserDefaults];
+    return [sharedDefaults valueForKey:REMOTE_IP];
+}
+
+- (void)updateRemoteIP:(NSString *)ip {
+    NSUserDefaults *sharedDefaults = [NSUserDefaults standardUserDefaults];
+    [sharedDefaults setValue:ip forKey:REMOTE_IP];
+    [sharedDefaults synchronize];
 }
 
 #pragma mark - 

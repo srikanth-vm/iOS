@@ -27,10 +27,12 @@
 {
     [super viewDidLoad];
     [self refreshArtWork];
+    [self refreshTrackStatus];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     [self refreshArtWork];
+    [self refreshTrackStatus];
 }
 
 #pragma mark - Remote Interface
@@ -39,6 +41,16 @@
     _webClient = [self vlcClient];
     [_webClient albumArtWithCompletionHandler:^(UIImage *artWork) {
         [_artWork setImage:artWork];
+    }];
+}
+
+- (void) refreshTrackStatus {
+    _webClient = [self vlcClient];
+    [_webClient trackStatusWithCompletionHandler:^(id trackInfo) {
+        _trackStatusInfo = [trackInfo copy];
+        [_trackTitle setText:[_trackStatusInfo objectForKey:TRACK_TITLE]];
+        [_album setText:[_trackStatusInfo objectForKey:TRACK_ALBUM]];
+        [_artist setText:[_trackStatusInfo objectForKey:TRACK_ARTIST]];
     }];
 }
 
@@ -64,7 +76,8 @@
             [_webClient vlcMediaControlCommand:STOP_TRACK];
             break;
     }
-    [self performSelector:@selector(refreshArtWork) withObject:self afterDelay:3];
+    [self performSelector:@selector(refreshArtWork) withObject:self afterDelay:2];
+    [self performSelector:@selector(refreshTrackStatus) withObject:self afterDelay:2];
 }
 
 - (IBAction)volumeControl:(UISlider *)sender {

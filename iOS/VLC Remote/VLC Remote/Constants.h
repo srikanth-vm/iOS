@@ -24,6 +24,7 @@
 
 #define ROOT_ELEMENT       @"root"
 #define CHILD_ELEMENT      @"element"
+#define CATEGORY_ELEMENT   @"category"
 #define INFO_ELEMENT       @"info"
 
 #define FILE_TYPE          @"type"
@@ -33,11 +34,14 @@
 
 // TRACK STATUS
 
-#define ARTIST             @"artist"
-#define TITLE              @"title"
-#define ALBUM              @"album"
+#define TRACK_ARTIST       @"artist"
+#define TRACK_TITLE        @"title"
+#define TRACK_ALBUM        @"album"
 #define TRACK_NAME         @"filename"
 
 // Misc
 
 #define DIR_FILE           @"dir"
+#define LAST_VISITED_DIR   @"last_visited_dir"
+#define REMOTE_IP          @"remote_ip"
+

@@ -21,6 +21,10 @@ typedef enum BrowserFileType:NSInteger {
 @property (copy, nonatomic) void(^statusCompletionHandler)(NSDictionary*);
 @property (strong, nonatomic) NSMutableArray *browserData;
 @property (strong, nonatomic) NSMutableDictionary *statusInfo;
+@property (assign, nonatomic) BOOL isParsingCategory;
+@property (assign, nonatomic) BOOL isParsingInfo;
+@property (strong, nonatomic) NSMutableString *infoMetaData;
+@property (strong, nonatomic) NSString *infoMetaName;
 
 + (id) sharedUtils;
 - (void) fileFolderInfoFromXMLData:(NSData*) rawXMLData
@@ -29,6 +33,10 @@ typedef enum BrowserFileType:NSInteger {
 - (void) showAlertWithTitle:(NSString*) title andMessage:(NSString*) message;
 - (BrowserFileType) fileType:(KLFile*) aFile;
 - (void) statusInfoFromXMLData:(NSData*) rawXMLData
-         withCompletionHandler:(void(^)(NSDictionary*)) onComplete
+         withCompletionHandler:(void(^)(NSDictionary*)) onComplete;
+- (void) updateCurrentDirectory:(NSString*) currentDir;
+- (NSString*) lastVisitedDirectory;
+- (void) updateRemoteIP:(NSString*) ip;
+- (NSString*) remoteIP;
 
 @end

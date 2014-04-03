@@ -13,7 +13,7 @@
 #pragma mark - VLC Requests
 
 - (NSURL*) requestURLWithQuery:(NSString*) query {
-    NSString *baseURL = @"http://192.168.1.2:8080";
+    NSString *baseURL = @"http://localhost:8080";
     NSString *request = [NSString stringWithFormat:@"%@%@", baseURL, query];
     return [NSURL URLWithString:request];
 }
@@ -38,6 +38,8 @@
 - (void)browseFolderAtLocation:(id)currentFolder withCompletionHandler:(void(^)(id)) onComplete {
     self.completionHandler = onComplete;
     NSString *folder;
+    _isXMLParsingBrowser = YES;
+    _isXMLParsingStatus = NO;
     if (currentFolder == nil) {
         folder = [NSString stringWithFormat:@"%@%@", BROWSE, @"file://~"];
     } else {
@@ -70,6 +72,8 @@
 
 - (NSDictionary *)trackStatusWithCompletionHandler:(void (^)(id))onComplete {
     self.completionHandler = onComplete;
+    _isXMLParsingStatus = YES;
+    _isXMLParsingBrowser = NO;
     NSDictionary *stats = [[NSDictionary alloc] init];
     [self sendCommand:[self requestURLWithQuery:STATUS] withCompletionHandler:^(id statusData) {
         [self parseStatusXMLData:statusData];
@@ -80,14 +84,15 @@
 #pragma mark -
 
 - (void) parseXMLData:(NSData*) rawData {
-    KLUtils *utils = [[KLUtils alloc] init];
-    [utils fileFolderInfoFromXMLData:rawData withCompletionHandler:^(NSArray *fileFolders) {
+    [[KLUtils sharedUtils] fileFolderInfoFromXMLData:rawData withCompletionHandler:^(NSArray *fileFolders) {
         self.completionHandler(fileFolders);
     }];
 }
 
 - (void) parseStatusXMLData:(NSData*) rawData {
-    
+    [[KLUtils sharedUtils] statusInfoFromXMLData:rawData withCompletionHandler:^(NSDictionary *statusInfo) {
+        self.completionHandler(statusInfo);
+    }];
 }
 
 @end

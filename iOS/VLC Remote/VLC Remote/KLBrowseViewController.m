@@ -32,7 +32,8 @@
  
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
-    [self fileFolderDataAtLocation:nil];
+    NSString *lastVisitedDir = [[KLUtils sharedUtils] lastVisitedDirectory];
+    [self fileFolderDataAtLocation:lastVisitedDir];
 }
 
 - (void)didReceiveMemoryWarning
@@ -83,9 +84,8 @@
 }
 
 - (void) fileFolderDataAtLocation:(NSString*) location {
-//    _webClient = [[KLWebClient alloc] init];
-//    [_webClient browseFolderAtLocation:location];
     _browseModel = [self browserModel];
+    [[KLUtils sharedUtils] updateCurrentDirectory:location];
     [_browseModel folderDataForFolderAtPath:location];
 }
 

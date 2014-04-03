@@ -10,6 +10,8 @@
 #import "KLWebClient.h"
 
 @interface KLRemoteViewController : UIViewController
+
+@property (strong, nonatomic) NSDictionary *trackStatusInfo;
 @property (strong, nonatomic) IBOutlet UILabel *trackTitle;
 @property (strong, nonatomic) IBOutlet UILabel *artist;
 @property (strong, nonatomic) IBOutlet UILabel *album;
