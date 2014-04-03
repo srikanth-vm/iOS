@@ -34,9 +34,12 @@ typedef enum BrowserFileType:NSInteger {
 - (BrowserFileType) fileType:(KLFile*) aFile;
 - (void) statusInfoFromXMLData:(NSData*) rawXMLData
          withCompletionHandler:(void(^)(NSDictionary*)) onComplete;
+<<<<<<< HEAD
 - (void) updateCurrentDirectory:(NSString*) currentDir;
 - (NSString*) lastVisitedDirectory;
 - (void) updateRemoteIP:(NSString*) ip;
 - (NSString*) remoteIP;
+=======
+>>>>>>> be8b2cb28dfab38c9c4e1b9e3e2ef4cf95fa0d2d
 
 @end
