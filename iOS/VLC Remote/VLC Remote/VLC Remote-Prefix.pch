@@ -5,6 +5,7 @@
 //
 
 #import <Availability.h>
+#import <CoreData/CoreData.h>
 #import "Constants.h"
 #import "KLFile.h"
 #import "KLUtils.h"

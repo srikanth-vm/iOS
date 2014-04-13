@@ -208,31 +208,39 @@
         <!--Settings-->
         <scene sceneID="Ew2-EP-5EG">
             <objects>
-                <viewController id="y8H-ME-Ysk" userLabel="Settings" sceneMemberID="viewController">
+                <viewController id="y8H-ME-Ysk" userLabel="Settings" customClass="KLSettingsViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="fkR-7U-QuR"/>
                         <viewControllerLayoutGuide type="bottom" id="f6F-bx-xLp"/>
                     </layoutGuides>
-                    <view key="view" contentMode="scaleToFill" id="CYu-97-CD2">
+                    <view key="view" opaque="NO" contentMode="scaleToFill" id="CYu-97-CD2">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dgn-7z-TT3">
-                                <rect key="frame" x="35" y="130" width="251" height="30"/>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="x.x.x.x" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Dgn-7z-TT3">
+                                <rect key="frame" x="35" y="193" width="251" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DkW-4K-u6Y">
-                                <rect key="frame" x="124" y="269" width="46" height="30"/>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0bl-U4-y5j">
+                                <rect key="frame" x="130" y="269" width="61" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button">
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Light" family="Helvetica Neue" pointSize="17"/>
+                                <state key="normal" title="Update">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="saveIP:" destination="y8H-ME-Ysk" eventType="touchUpInside" id="QT9-hO-hK5"/>
+                                </connections>
                             </button>
                         </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Settings" id="wS9-bF-Mgp"/>
+                    <connections>
+                        <outlet property="ipAddress" destination="Dgn-7z-TT3" id="OZr-Qk-LND"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="73k-gH-fHk" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

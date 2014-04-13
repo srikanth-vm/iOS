@@ -92,8 +92,8 @@
 
 - (void) updateVolumeTextWith:(int) val {
     float volumeIndicator = ceil((double) ((double) val/ 512.0) * 200.0);
-    NSNumber *volumePercentile = @(volumeIndicator);
-    [_volumeLevelIndicator setText:[volumePercentile stringValue]];
+    NSString *volumePercentile = [NSString stringWithFormat:@"%d%%", (int) volumeIndicator];
+    [_volumeLevelIndicator setText:volumePercentile];
 }
 
 - (KLWebClient*) vlcClient {

@@ -13,6 +13,7 @@
 #pragma mark - VLC Requests
 
 - (NSURL*) requestURLWithQuery:(NSString*) query {
+    NSString *remoteIP = [self remoteIP];
     NSString *baseURL = @"http://192.168.1.3:8080";
     NSString *request = [NSString stringWithFormat:@"%@%@", baseURL, query];
     return [NSURL URLWithString:request];
@@ -87,6 +88,26 @@
 }
 
 #pragma mark -
+
+- (NSString*) remoteIP {
+    NSFetchRequest *fetchRequest = [[NSFetchRequest alloc] init];
+    KLAppDelegate *appDel = [[UIApplication sharedApplication] delegate];
+    self.managedObjectContext = appDel.managedObjectContext;
+    NSEntityDescription *entityDesc = [NSEntityDescription entityForName:@"Settings"
+                                                  inManagedObjectContext:self.managedObjectContext];
+    [fetchRequest setEntity:entityDesc];
+    NSError *error;
+    NSArray *fetchedRecords = [self.managedObjectContext executeFetchRequest:fetchRequest
+                                                                       error:&error];
+    NSString *remoteIPAddress;
+    if (fetchedRecords != nil && [fetchedRecords count] > 0) {
+        Settings *settingsData = [fetchedRecords objectAtIndex:0];
+        remoteIPAddress = settingsData.ip;
+    } else {
+        remoteIPAddress = @"";
+    }
+    return remoteIPAddress;
+}
 
 - (void) parseXMLData:(NSData*) rawData {
     [[KLUtils sharedUtils] fileFolderInfoFromXMLData:rawData withCompletionHandler:^(NSArray *fileFolders) {

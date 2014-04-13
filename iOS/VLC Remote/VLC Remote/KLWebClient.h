@@ -7,12 +7,15 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "KLAppDelegate.h"
+#import "Settings.h"
 #import "Constants.h"
 #import "AFNetworking.h"
 
 @interface KLWebClient : NSObject
 
 @property (strong, nonatomic) AFHTTPRequestOperationManager *requestManager;
+@property (strong, nonatomic) NSManagedObjectContext *managedObjectContext;
 @property (copy, nonatomic) void(^completionHandler)(id);
 @property (assign, nonatomic) BOOL isXMLParsingBrowser;
 @property (assign, nonatomic) BOOL isXMLParsingStatus;
